@@ -17,6 +17,9 @@ header {
   justify-content: space-between;
 
   padding: 48px;
+  position: fixed;
+  background-color: #09090a;
+  width: 100%;
 }
 
 button {
@@ -54,10 +57,11 @@ input:checked {
   border: 2px solid #a78bfa;
 }
 
-form {
+#form-habits {
   display: flex;
 
-  padding: 0px 48px;
+  padding: 182px 48px 48px;
+  width: fit-content; /* significa encaixe o conteudo na largura */
 }
 .habits {
   display: flex;
@@ -96,4 +100,10 @@ form {
 
   color: #a1a1aa;
   text-align: center;
+}
+
+@media (max-width: 570px) {
+  header button div {
+    display: none;
+  }
 }
